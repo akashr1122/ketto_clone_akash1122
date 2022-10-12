@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="sf">
+    <div id="sfDropMenu">English</div>
+    <div id="sfMain">
+        <div>Start your fundraiser</div>
+        <div id="sfPurpose">
+            <div>Purpose of raising funds</div>
+            <div>Medical Treatment</div>
+
+        </div>
+        <form id="signup-form">
+        <input id="inputName" type="text" placeholder="Name">
+        <p>Name as mentioned in your Aadhar card</p>
+        <input id="inputEmail" type="email" placeholder="Email Address">
+        <br>
+        <input id="inputPass" type="password" placeholder="Create Password">
+        <br>
+        <input id="inputNumber" type="number" name=""  placeholder="Mobile">
+        <p>Please enter a valid number</p>
+
+        <h3>Already have an account? <span class="textColor">Login</span></h3>
+        <button id="submit">Next</button>
+
+        </form>
+        
+    </div>
+    <p id="sfLast">Are you an NGO? <span class="textColor">Apply Here</span></p>
+    
+</body>
+</html>
+
+<script>
+    document.getElementById("submit").addEventListener("click", funbutton);
+    let signupArr=JSON.parse(localStorage.getItem("signup")) || [];
+    function funbutton(){
+        event.preventDefault();
+        // console.log("click success")
+        let obj={
+            iemail: document.querySelector("#inputEmail").value,
+            ipass: document.querySelector("#inputPass").value,
+            iname: document.querySelector("#inputName").value,
+            inum: document.querySelector("#inputNumber").value
+        }
+
+
+        if(obj.iemail=="" || obj.ipass=="" || obj.iname=="" || obj.inum=="" ){
+            alert("Complete the details")
+            // console.log("done");
+        }else{
+            signupArr.push(obj);
+            // console.log(signupArr);
+            localStorage.setItem("signup",JSON.stringify(signupArr));
+            alert("sign up successfull");
+
+        }
+
+
+    }
+        
+    
+</script>

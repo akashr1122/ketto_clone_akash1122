@@ -1,0 +1,1245 @@
+body{
+    margin: 0px;
+}
+
+.navbar{
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #444444;
+    
+
+}
+
+#navLeft{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#navLeft img{
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+#navRight{
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    /* width:50%; */
+    align-items: center;
+    
+}
+#navRight>div{
+    display: flex;
+}
+
+#navWhatsapp{
+    display: flex;
+    border: 2px solid #29a61b;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+#navWhatsapp>img{
+    width: 20px;
+    margin-right: 7px;
+    margin-left: 10px;
+    
+}
+
+#navWhatsapp>h5{
+    color: #29a61b;
+}
+
+#navRight button{
+    background-color: white;
+    padding: 7px 20px;
+    color: #01bfbd;
+    border-color: #01bfbd;
+    margin-left: 20px;
+    border-style: solid;
+    margin-right: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#navSearch{
+    display: flex;
+    align-items: center;
+}
+
+#navSearch img{
+    width: 24px;
+    margin-top: 20px;
+    filter: opacity(50%);
+}
+
+#downArrow{
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #444444;
+    position: relative;
+    top: 12px;
+    margin-left: 6px;
+
+}
+
+#navLeft :nth-child(3){
+    margin-right: 20px;
+}
+
+#navLeft>div{
+    cursor: pointer;
+}
+
+#navRight>div{
+    cursor: pointer;
+}
+
+
+
+.dropDownButton{
+    position: relative;
+    display: inline-block;
+}
+
+.navDrop-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 1;
+}
+
+.navDrop-content a{
+    color: #444444;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navDrop-content a:hover {
+    background-color: whitesmoke;
+    color: #01bfbd;
+}
+
+.show {
+    display: block;
+}
+
+.popUp{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+
+
+
+    margin: auto;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popUpActive{
+    z-index: 1;
+    top: 50%;
+    opacity: 1;
+    background-color: white;
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+
+
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+#popUpTop>h2{
+    text-align: center;
+    color: #444444;
+    margin-bottom: 80px;
+}
+
+.closeButton{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(146, 146, 146);
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.popUpLeft{
+    /* border: 1px solid blue; */
+    border-right: 1px solid #01bfbd;
+    text-align: center;
+    justify-content: center;
+}
+
+.popUpLeft input{
+    height: 50px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 2px solid #01bfbd;
+    outline: 0;
+}
+
+.popUpLeft button{
+    width: 80%;
+    height: 40px;
+    background-color: #01bfbd;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popUpLeft h5{
+    color: #01bfbd;
+    cursor: pointer;
+}
+
+.textColor{
+    color: #01bfbd;
+    cursor: pointer;
+}
+
+.popUpLeft p{
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+    line-height: 20px;
+}
+
+.popUpLeft h3 {
+    font-size: 16px;
+    color: #444444;
+}
+
+#googleButton{
+    background-color: #4285f4;
+    display: flex;
+    padding: 5px;
+    padding-right: 30px;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#googleButton>img{
+    width: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#googleButton h4{
+    color: white;
+}
+
+#sfDropMenu{
+    /* border: 1px solid red; */
+    width: 100px;
+    height: 50px;
+    border-radius: 7px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 410px;
+    background-color: white;
+    font-weight: 500;
+}
+
+#sfMain{
+    /* border: 1px solid blue; */
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#sfMain>div:nth-child(1){
+    color: #444444;
+    font-size: 22px;
+    font-weight: 700;
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    padding-top: 20px;
+    
+}
+
+#sfMain input{
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #444444;
+    outline: 0;
+}
+
+#sfPurpose{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid red; */
+    background-color: whitesmoke;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#sfPurpose>div:nth-child(1){
+    margin-right: 10px;
+}
+
+#sfMain p{
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#sfMain button{
+    width: 100%;
+    height: 50px;
+    background-color: #01bfbd;
+    color: white;
+    border: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#sf{
+    background-color: #444444;
+}
+
+#sf h3{
+    color: #444444;
+    margin-top: 100px;
+    font-size: 16px;
+}
+
+#sfLast{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+#navRight button>a{
+    text-decoration: none;
+    color: #01bfbd;
+}
+
+.navHiw>a{
+    text-decoration: none;
+    color: #444444;
+}
+
+/* Home page top div */
+
+#home-top-main{
+    background-image: url("https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1366&dpr=1.0");
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home-top-main>div{
+    /* border: 1px solid red; */
+    width: 50%;
+    /* height: 400px; */
+}
+
+#home-top-main h1{
+    width: 80%;
+    margin-top: 80px;
+    color: #444444;
+}
+
+#home-top-fund{
+    display: flex;
+}
+
+#home-top-fund>div{
+    margin-right: 50px;
+}
+
+#home-top-fund h2{
+    color: #039695;
+}
+
+#home-top-fund p{
+    font-weight: bold;
+    color: #777;
+    margin-top: -10px;
+}
+
+#home-top-main>div p{
+    color: #039695;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#home-top-p{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#home-top-main button{
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #01bfbd;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    /* box-shadow: rgba(0, 95, 76, 0.24) 0px 3px 8px; */
+}
+
+#home-top-main button:hover{
+    background-color: #009393;
+    
+}
+
+#home-top-main h4{
+    color: #009393;
+    cursor: pointer;
+}
+
+
+/* home page top overlaping div */
+
+#home-top-overlap{
+    /* border: 1px solid red; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: -50px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+#home-top-overlap button{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #204B6B;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+#home-top-overlap h3{
+    color: #204B6B;
+    font-size: 18px;
+    /* margin-left: 20px; */
+}
+
+#home-top-overlap p{
+    color: #777;
+    line-height: 20px;
+    width: 80%;
+    margin-top: -10px;
+    font-size: 12px;
+    /* margin-left: 20px; */
+}
+
+#home-top-overlap img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#home-top-overlay-image{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 200px;
+}
+
+#trending-fundraisers-top{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+    text-align: center;
+}
+
+#trending-fundraisers-top p{
+    color: #777;
+    margin-top: -10px;
+}
+
+#multiple-carousal{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-mc-inner-container{
+    /* border: 1px solid blue; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 28%;
+    border-radius: 10px;
+}
+
+.home-mc-inner-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mc-button-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#mc-donate{
+    background-color: #01bfbd;
+    border: none;
+}
+
+#mc-donate h4{
+    color: white;
+}
+
+.mc-button{
+    border: 1px solid #4285f4;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    border-radius: 5px;
+    /* margin-right: 20px; */
+    height: 40px;
+}
+
+.mc-correct{
+    /* border: 1px solid yellow; */
+    padding: 20px;
+    
+}
+
+.mc-button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+.home-mc-div-container{
+    display: flex;
+    margin-top: -20px;
+    justify-content: space-between;
+}
+
+.home-mc-div-container>div{
+    display: flex;
+    align-items: center;
+
+}
+
+.home-mc-div-container img{
+    width: 20px;
+    height: 20px;
+    /* margin-left: 10px; */
+    margin-right: 5px;
+}
+
+.home-mc-div-container p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.home-mc-amount{
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-left: 20px; */
+}
+
+.home-mc-by{
+    display: flex;
+    /* margin: 20px; */
+}
+
+.home-mc-by>p{
+    color: #777777;
+    font-weight: 400;
+    /* margin-left: 10px; */
+}
+
+.home-mc-inner-container>h3{
+    /* margin: 20px; */
+}
+
+.home-mc-inner-container>img{
+    width: 100%;
+}
+
+#trending-fundraisers-bottom{
+    color: #444444;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#trending-fundraisers-bottom h4{
+    color:#01bfbd;
+    margin-left: 100px;
+}
+
+
+/* Start a fundraiser in 3 simple steps */
+
+.hiw-startFundHead h1{
+    color: #444444;
+    margin-top: 100px;
+}
+
+.hiw-startFundHead-main{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 60%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hiw-fundSteps{
+    /* border: 1px solid red; */
+}
+
+.hiw-startFundHead-main img{
+    width: 65px;
+    margin-top: -60px;
+}
+
+.hiw-fundSteps>div{
+    /* border: 1px solid green; */
+    width: 70%;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.hiw-fundSteps>div>h3{
+    color: #01bfbd;
+}
+
+.hiw-fundSteps>div> :nth-child(2){
+    color: #444444;
+    line-height: 24px;
+}
+
+.hiw-fundSteps>div> :nth-child(3){
+    font-size: 10px;
+    color: #777777;
+}
+
+.hiw-startFundHead-main video{
+    width: 320px;
+
+    
+}
+
+.fundraisersButtons{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.fundraisersButtons button{
+    width: 300px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.fundraisersButtons :nth-child(1){
+    background-color: #01bfbd;
+    color: white;
+    font-weight: 700;
+}
+
+.fundraisersButtons :nth-child(2){
+    background-color: white;
+    color: #01bfbd;
+    border: 1px solid #01bfbd;
+    font-weight: 700;
+}
+
+.fundraisersSMbuttons{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.fundraiserFb{
+    background-color: #4285f4;
+    border-radius: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-right: -80px;
+    
+}
+
+.fundraiserFb img{
+    width: 40px;
+    height: 40px;
+}
+
+.fundraiserFb P{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.fundraiserWp{
+    background-color: #25d366;
+    border-radius: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    
+}
+
+.fundraiserWp img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.fundraiserWp P{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.fundraisersSMbuttons{
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.hiw-startFundHead>h1{
+    text-align: center;
+}
+
+/* manage your funds */
+
+.home-managefunds-container{
+    /* border: 1px solid red; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 60%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 20px;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: space-around;
+    padding: 50px 30px 0px 30px;
+}
+
+#home-managefunds-left{
+    /* border: 1px solid red; */
+    width: 40%;
+}
+
+#home-managefunds-left>img{
+    width: 100%;
+}
+
+#home-managefunds-right{
+    /* border: 1px solid blue; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+    width: 50%;
+    
+}
+
+#home-managefunds-right>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 70px 20px;
+    /* border: 1px solid yellowgreen; */
+}
+
+#home-managefunds-right p{
+    font-weight: 550;
+    color: #777;
+    width: 100%;
+}
+
+#home-managefunds-right :nth-child(2) img{
+    width: 30%;
+}
+
+#home-managefunds-right h1{
+    margin-top: 50px;
+}
+
+#home-managefunds-right>:nth-child(3){
+    width: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+#home-managefunds-right>:nth-child(3) img{
+    width: 40%;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+}
+
+/* causes u can raise funds for */
+
+#home-heading{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#home-heading>p{
+    color: #777777;
+    width: 44%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#home-causes{
+    width: 80%;
+    margin: auto;
+   
+}
+
+
+#home-raisefunds-grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+#home-raisefunds-grid div{
+    background-color: #01bfbd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#home-raisefunds-grid img{
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    filter: invert(98%) sepia(4%) saturate(2%) hue-rotate(186deg) brightness(117%) contrast(100%);
+    
+}
+
+#home-raisefunds-grid h4{
+    color: white;
+    margin-top: 10px;
+}
+
+#home-raisefunds-grid p{
+    color: white;
+    font-weight: 700;
+    margin-top: -20px;
+}
+
+#home-why-ketto{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+#home-why-ketto-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    gap: 50px;
+}
+#home-why-ketto-grid img{
+    width: 60px;
+    filter: invert(46%) sepia(93%) saturate(2020%) hue-rotate(146deg) brightness(105%) contrast(99%);
+}
+
+#home-why-ketto-grid h2{
+    margin-top: -10px;
+    color: #fec003;
+}
+
+#home-why-ketto-grid p{
+width: 80%;
+margin: auto;
+}
+
+
+/* Success stories */ 
+
+
+#home-success-story{
+    margin-top: 100px;
+
+}
+
+#home-success-story>h1{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+/* slide bottom */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  /* padding: 16px; */
+  margin-top: -22px;
+  color: #01bfbd;
+  font-weight: 200;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #039695;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.slide{
+    width: 90%;
+    /* border: 1px solid red; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* height: 400px; */
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+}
+
+.success-slide-image{
+    /* border: 1px solid blue; */
+    width: 40%;
+    height: 100%;
+}
+
+.success-slide-image>img{
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.success-slide-right{
+    /* border: 1px solid green; */
+    width: 60%;
+}
+
+.success-slide-right>div:nth-child(1){
+    /* border: 1px solid yellow; */
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.success-slide-right>div:nth-child(1) p{
+    color: #777777;
+    line-height: 24px;
+}
+
+.success-slide-right>div:nth-child(2){
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+
+.success-slide-right>div:nth-child(2)>p{
+    color: #777777;
+    font-size: 16px;
+    
+}
+
+#home-success-buttons{
+    margin-top: 30px;
+}
+
+#home-featuredin{
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-featuredin-text{
+color: #444444;
+margin: auto;
+text-align: center;
+margin-bottom: -100px;
+margin-top: 100px;
+}
+
+#home-featuredin img{
+width: 100px;
+
+}
+
+
+/* footer part start */
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #055453;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+#footertop{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+#footertop>div{
+    /* border: 1px solid white; */
+    width: 18%;
+    height: 400px;
+    
+}
+
+#footertop>div:nth-child(1){
+    /* background-color: yellow; */
+
+}
+
+#footerlogo{
+   border-bottom: 0.1pt solid rgba(43, 210, 160, 0.401); 
+}
+
+#footerlogo img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#footer-sm-icons img{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(257deg) brightness(107%) contrast(102%);
+    margin-top: 20px;
+    margin-right: 7px;
+}
+
+#footer-followers>h2{
+    color: white;
+    margin-top: 30px;
+}
+
+#footer-followers>p{
+    color: #01bfbd;
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+#footer-contact{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    margin-top: 70px;
+}
+
+#footertop h4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footertop a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 16px;
+}
+
+#footer-banking-logo{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+    border-bottom: 0.1pt solid rgba(43, 210, 160, 0.401); 
+    padding-bottom: 20px;
+}
+
+#footer-copyright p{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* footer end */
+
+.supportButton{
+    width: 150px;
+    height: 50px;
+    background-color: #01bfbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+.supportButton h4{
+    color: white;
+}

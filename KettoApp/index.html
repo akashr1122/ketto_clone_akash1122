@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link css to html -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page Navbar -->
+    <div class="navbar">
+        <div id="navLeft">
+            <div><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.3" alt=""></div>
+            <div>Browse Fundraisers</div>
+            <div class="dropDownButton">
+                <div onclick="navDropFunc()" class="dropDown">Fundraise For <span id="downArrow"></span></div>
+                <div id="myNavDrop" class="navDrop-content">
+                    <a href="#">Medical Treatment</a>
+                    <a href="#">NGO/ Charity</a>
+                    <a href="#">Other Cause</a>
+                </div>
+            </div>
+            <div class="navHiw"><a href="howItWorks.html">How It Works</a> </div>
+            <div>|</div>
+            <div id="navSearch">
+                <div><img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt=""></div>
+                <div>Search</div>
+            </div>
+
+        </div>
+        <div id="navRight">
+            <div>
+               <div id="navWhatsapp">
+                <img src="https://www.cppng.com/file/thumb/2020-06/77220-scalable-vector-graphics-logo-whatsapp-icon-thumb.png" alt="">
+                <h5>Chat</h5>
+               </div>
+            </div>
+
+            <div>
+                <button><a href="startFundraiser.html"> Start a Fundraiser</a></button>
+            </div>
+            <div id="showLogin">
+                Sign In
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign in Page -->
+    <div class="popUp">
+        <div id="popUpTop">
+            <h2>Login</h2>
+            <div class="closeButton">&times;</div>
+
+        </div>
+
+        
+        <div class="form">
+            <div class="popUpLeft">
+                <form id="signinInfo">
+                    <input id="signinEmail" type="email" type="number" placeholder="Email/ Mobile Number">
+                <br>
+                <input id="signinPass" type="password" placeholder="Enter Password">
+                <button id="submit">Login</button>
+                <p>By continuing you agree to our <span class="textColor">Terms of Service</span> and <span class="textColor"> Privacy Policy</span></p>
+                <h3>Want to start a fundraiser? <span class="textColor"> Click here</span></h3>
+
+                </form>
+                
+            </div>
+            <div class="pupUpRight">
+                <div id="googleButton">
+                    <img src="https://logosandtypes.com/wp-content/uploads/2020/11/Google.png" alt="">
+                    <h4>Sign in with Google</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home top div -->
+    <div id="home-top-main">
+        <div>
+            <h1>Need Funds to Pay For a Medical Emergency or Social Cause?</h1>
+            <div id="home-top-fund">
+                <div>
+                    <h2>0%</h2>
+                    <p>PLATFORM FEE</p>
+                </div>
+                <div>
+                    <h2>55 Lakh+</h2>
+                    <p>DONORS</p>
+                </div>
+                <div>
+                    <h2>2 Lakh+</h2>
+                    <p>FUNDRAISERS</p>
+                </div>
+            </div>
+            <p>Ketto’s <span id="home-top-p"> 0% Platform fees</span> ensures maximum funds for you</p>
+            <button>Start a Fundraiser for FREE</button>
+            <h4>नि: शुल्क फंडरेजर शुरू करें ></h4>
+        </div>
+
+    </div>
+
+    <!-- Home page top overlaping div -->
+        <div id="home-top-overlap">
+            <div>
+                <button>Donate Now ></button>
+            </div>
+            <div>
+                <h3>Start Monthly Donation to Save Lives</h3>
+                <p>With your support, countless children will receive health care and a happy life. Start your monthly donation today.</p>
+            </div>
+            <div id="home-top-overlay-image">
+                <img src="https://kettocdn.gumlet.io/media/banner/0/92/image/81d7a1a7626397c32f6c1fb83bfdf476ccd734af.png?w=720&dpr=1.0" alt="">
+            </div>
+        </div>
+
+        <!-- Trending Fundraisers -->
+        <div id="trending-fundraisers-top">
+            <h1>Trending Fundraisers</h1>
+            <p>View the fundraisers that are most active right now</p>
+        </div>
+        <div id="multiple-carousal">
+            <div class="home-mc-inner-container">
+                <img src="https://kettocdn.gumlet.io/media/campaign/180000/180773/image/wid6089ceb85c0bd.jpeg?w=320&dpr=1.3" alt="">
+
+                <div class="mc-correct">
+                    <h3>Feeding From Far-Ration Distribution Amid Lockdown</h3>
+                <div class="home-mc-by">
+                    <img src="https://kettocdn.gumlet.io/media/individual/1463000/1463388/image/62c32feb56031.jpg?w=50&dpr=1.0" alt="">
+                    <p>by Pooja Reddy</p>
+                </div>
+                <p><span class="home-mc-amount">₹4,80,81,689</span>  raised out of ₹59,00,000</p>
+                <div class="home-mc-div-container">
+                    <div class="home-mc-time">
+                        <img src="https://cdn-icons-png.flaticon.com/512/109/109613.png" alt="">
+                        <h3>161</h3>
+                        <p>Days Left</p>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Love_Heart_symbol.svg/264px-Love_Heart_symbol.svg.png" alt="">
+                        <h3>12481</h3>
+                        <p>Supporters</p>
+                    </div>
+                </div>
+                <div class="mc-button-div">
+                    <div class="mc-button">
+                        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="">
+                        <h4>Share</h4>
+                    </div>
+                    <div class="mc-button" id="mc-donate">
+                        <h4>Donate</h4>
+                    </div>
+                </div>
+                </div>
+
+                
+            </div>
+
+            <div class="home-mc-inner-container">
+                <img src="https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=320&dpr=1.0" alt="">
+
+                <div class="mc-correct">
+                    <h3>Feeding From Far-Ration Distribution Amid Lockdown</h3>
+                <div class="home-mc-by">
+                    <img src="https://kettocdn.gumlet.io/media/individual/1463000/1463388/image/62c32feb56031.jpg?w=50&dpr=1.0" alt="">
+                    <p>by Pooja Reddy</p>
+                </div>
+                <p><span class="home-mc-amount">₹4,80,81,689</span>  raised out of ₹59,00,000</p>
+                <div class="home-mc-div-container">
+                    <div class="home-mc-time">
+                        <img src="https://cdn-icons-png.flaticon.com/512/109/109613.png" alt="">
+                        <h3>161</h3>
+                        <p>Days Left</p>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Love_Heart_symbol.svg/264px-Love_Heart_symbol.svg.png" alt="">
+                        <h3>12481</h3>
+                        <p>Supporters</p>
+                    </div>
+                </div>
+                <div class="mc-button-div">
+                    <div class="mc-button">
+                        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="">
+                        <h4>Share</h4>
+                    </div>
+                    <div class="mc-button" id="mc-donate">
+                        <h4>Donate</h4>
+                    </div>
+                </div>
+                </div>
+
+                
+            </div>
+
+            <div class="home-mc-inner-container">
+                <img src="https://kettocdn.gumlet.io/media/campaign/167000/167947/image/wid57beaf6d360986134ecdbd89657dd6a2b901a548.jpg?w=320&dpr=1.0" alt="">
+
+                <div class="mc-correct">
+                    <h3>Feeding From Far-Ration Distribution Amid Lockdown</h3>
+                <div class="home-mc-by">
+                    <img src="https://kettocdn.gumlet.io/media/individual/1463000/1463388/image/62c32feb56031.jpg?w=50&dpr=1.0" alt="">
+                    <p>by Pooja Reddy</p>
+                </div>
+                <p><span class="home-mc-amount">₹4,80,81,689</span>  raised out of ₹59,00,000</p>
+                <div class="home-mc-div-container">
+                    <div class="home-mc-time">
+                        <img src="https://cdn-icons-png.flaticon.com/512/109/109613.png" alt="">
+                        <h3>161</h3>
+                        <p>Days Left</p>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Love_Heart_symbol.svg/264px-Love_Heart_symbol.svg.png" alt="">
+                        <h3>12481</h3>
+                        <p>Supporters</p>
+                    </div>
+                </div>
+                <div class="mc-button-div">
+                    <div class="mc-button">
+                        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="">
+                        <h4>Share</h4>
+                    </div>
+                    <div class="mc-button" id="mc-donate">
+                        <h4>Donate</h4>
+                    </div>
+                </div>
+                </div>
+
+                
+            </div>
+
+            
+        </div>
+
+
+        <div id="trending-fundraisers-bottom">
+            <p>Note: Some fundraisers are not eligible for any tax deduction such as 80G, 501(c), etc.</p>
+            <h4>View More ></h4>
+        </div>
+
+         <!-- Start a Fundraiser in three simple steps -->
+
+    <div class="hiw-startFundHead">
+        <h1>Start a Fundraiser in three simple steps</h1>
+    </div>
+
+    <div class="hiw-startFundHead-main">
+        <div>
+            <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.3" alt="">
+        </div>
+        <div class="hiw-fundSteps">
+            <div>
+                <h3>Start your fundraiser</h3>
+                <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds for.</p>
+
+            </div>
+
+            <div>
+                <h3>Share your fundraiser</h3>
+                <p>All you need to do is share the fundraiser with your friends and family. In no time, support will start pouring in.</p>
+                <p>Share your fundraiser directly from dashboard on social media.</p>
+
+            </div>
+
+            <div>
+                <h3>Withdraw Funds</h3>
+                <p>The funds raised can be withdrawn without any hassle directly to your bank account.</p>
+                <p>It takes only 5 minutes to withdraw funds on ketto.</p>
+            </div>
+
+        </div>
+
+        <div>
+            <video controls autoplay src="https://www.ketto.org/assets/videos/screen_recording.webm">
+                <source src="https://www.ketto.org/assets/videos/screen_recording.webm" type="video">
+            </video>
+        </div>
+        
+    </div>
+    <div class="fundraisersButtons">
+        <button>START A FUNDRAISER FOR FREE</button>
+        <button>TALK TO US</button>
+    </div>
+
+    <div class="fundraisersSMbuttons">
+        <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
+        <div class="fundraiserFb">
+            <img src="https://www.freeiconspng.com/uploads/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" alt="">
+            <p>CHAT WITH US</p>
+        </div>
+        <div class="fundraiserWp">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41E_6GT8MHMtsLIGRzfeo4J7n38yxNb2KYiQoFoOVffEdHFA3QTfoveKRrXdishjwNuM&usqp=CAU" alt="">
+            <p>CHAT WITH US</p>
+        </div>
+    </div>
+
+
+    <!-- manage your fundraisers on the go -->
+
+    <div class="home-managefunds-container">
+        <div id="home-managefunds-left">
+            <img src="https://ketto.gumlet.io/assets/images/homepage/mcd-app-homepage.png?w=480&dpr=1.0" alt="">
+        </div>
+        <div id="home-managefunds-right">
+            <h1>Manage your fundraisers on the go</h1>
+            <!-- grid -->
+            <div>
+                <div>
+                    <img src="https://ketto.gumlet.io/assets/images/download/phone.png?w=200&dpr=1.0" alt="">
+                    <p>Access a personalized dashboard</p>
+                </div>
+                <div>
+                    <img src="https://ketto.gumlet.io/assets/images/download/withdraw.png?w=200&dpr=1.0" alt="">
+                    <p>Withdraw your funds faster</p>
+                </div>
+                <div>
+                    <img src="https://ketto.gumlet.io/assets/images/download/piggy-bank.png?w=200&dpr=1.0" alt="">
+                    <p>Keep track of all your donations received</p>
+                </div>
+                <div>
+                    <img src="https://ketto.gumlet.io/assets/images/download/support.png?w=200&dpr=1.0" alt="">
+                    <p>Start fundraisers within seconds</p>
+                </div>
+            </div>
+            <!-- playstore and appstore -->
+            <div>
+                <img src="https://ketto.gumlet.io/assets/images/sip/icons/black-google-store.png?w=480&dpr=1.0" alt="">
+                <img src="https://ketto.gumlet.io/assets/images/sip/App-Store-black.png?w=480&dpr=1.0" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- causes you can raise funds for -->
+    <div id="home-causes">
+        <div id="home-heading">
+            <h1>Causes you can raise funds for</h1>
+            <p>Be it for a personal need, social cause or a creative idea - you can count on us for
+                the project that you want to raise funds for.</p>
+        </div>
+
+        <div id="home-raisefunds-grid">
+            <div>
+                <img src="https://icon-library.com/images/medical-bag-icon/medical-bag-icon-29.jpg" alt="">
+                <h4>MEDICAL</h4>
+                <p>__</p>
+            </div>
+
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/2611/2611635.png" alt="">
+                <h4>MEMORIAL</h4>
+                <p>__</p>
+            </div>
+
+            <div>
+                <img src="http://cdn.onlinewebfonts.com/svg/img_192264.png" alt="">
+                <h4>CHILDREN</h4>
+                <p>__</p>
+            </div>
+
+            <div>
+                <img src="https://www.freeiconspng.com/thumbs/education-png/education-png-1.png" alt="">
+                <h4>EDUCATION</h4>
+                <p>__</p>
+            </div>
+
+            <div>
+                <img src="https://www.freeiconspng.com/thumbs/animal-icon-png/animal-paw-vector-icon-animals-icons-icons-download-0.png" alt="">
+                <h4>ANIMAL</h4>
+                <p>__</p>
+            </div>
+
+            <div>
+                <img src="http://cdn.onlinewebfonts.com/svg/img_529409.png" alt="">
+                <h4>OTHERS</h4>
+                <p>__</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Why ketto -->
+    <div id="home-why-ketto">
+        <h1>Why Ketto?</h1>
+        <div id="home-why-ketto-grid">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3179/3179391.png" alt="">
+                <h2>_____</h2>
+                <p>Industry’s best fundraising success rate</p>
+            </div>
+
+            <div>
+                <img src="https://icon-library.com/images/donors-icon/donors-icon-20.jpg" alt="">
+                <h2>_____</h2>
+                <p>Supported By 55,00,000+ Donors</p>
+            </div>
+
+            <div>
+                <img src="https://cdn1.iconfinder.com/data/icons/seo-part-1-1/128/Technical-Support-Options-Productivity-Service-Tools-512.png" alt="">
+                <h2>_____</h2>
+                <p>Easy-To-Manage Tools To Boost Results</p>
+            </div>
+
+            <div>
+                <img src="https://icon-library.com/images/card-icon/card-icon-0.jpg" alt="">
+                <h2>_____</h2>
+                <p>Receive donations via all popular payment modes</p>
+            </div>
+
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/61/61498.png" alt="">
+                <h2>_____</h2>
+                <p>Get Expert Support 24/7</p>
+            </div>
+
+            <div>
+                <img src="https://wewarriors.life/pics/cdn.onlinewebfonts.com/svg/img_233159.png" alt="">
+                <h2>_____</h2>
+                <p>A Dedicated Smart-Dashboard</p>
+            </div>
+
+            <div>
+                <img src="https://www.seelink.app/static/save-money.svg" alt="">
+                <h2>_____</h2>
+                <p>Withdraw Funds Without Hassle</p>
+            </div>
+
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/71/71123.png" alt="">
+                <h2>_____</h2>
+                <p>International Payment Support</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Success Stories -->
+    <div id="home-success-story">
+        <h1>Success Stories</h1>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="success-slide-image">
+                        <img src="https://kettocdn.gumlet.io/media/banner/0/97/image/50e08ce31ef3bfa184cadd9ec164b8ecee8bb0f0.jpg?w=auto&dpr=1.0" alt="">
+                    </div>
+                    <div class="success-slide-right">
+                        <div>
+                            <h4>You are the reason Suraj gets to live his dream</h4>
+                            <p>“Our son’s cancer had relapsed after 2.5 years of chemotherapy & we knew we couldn’t afford his life-saving treatment. But thanks to your donations & prayers, he underwent successful treatment & is recovering well. May God bless you all for saving his life!” -Dhanasar (Father)</p>
+                            <p><span class="textColor">Read more</span></p>
+                        </div>
+                        <div>
+                            <p>Subscribe to read such inspiring stories</p>
+                            <div class="fundraiserWp">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41E_6GT8MHMtsLIGRzfeo4J7n38yxNb2KYiQoFoOVffEdHFA3QTfoveKRrXdishjwNuM&usqp=CAU" alt="">
+                                <p>Subscribe</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="success-slide-image">
+                        <img src="https://kettocdn.gumlet.io/media/banner/0/96/image/0717875196afb641172a631c282e1875d76b8930.jpg?w=auto&dpr=1.0" alt="">
+                    </div>
+                    <div class="success-slide-right">
+                        <div>
+                            <h4>Heroes like you helped my son win his battle.</h4>
+                            <p>“May Allah bless you all! Thanks to your generous donations, Afzal underwent a successful BMT to treat thalassemia major. We are eternally grateful to you all for gifting our little bundle of joy a second chance at life!” -Reshma (Mother)</p>
+                            <p><span class="textColor">Read more</span></p>
+                        </div>
+                        <div>
+                            <p>Subscribe to read such inspiring stories</p>
+                            <div class="fundraiserWp">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41E_6GT8MHMtsLIGRzfeo4J7n38yxNb2KYiQoFoOVffEdHFA3QTfoveKRrXdishjwNuM&usqp=CAU" alt="">
+                                <p>Subscribe</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="success-slide-image">
+                        <img src="https://kettocdn.gumlet.io/media/banner/0/95/image/bc5ae443b8da492ff0c97082e2981ada078e385d.jpg?w=auto&dpr=1.0" alt="">
+                    </div>
+                    <div class="success-slide-right">
+                        <div>
+                            <h4>My daughter finally gets to enjoy her childhood</h4>
+                            <p>"My daughter was suffering from Budd Chiari syndrome with a recurrent gastrointestinal bleed and needed an urgent liver transplant to survive, but sadly we couldn't afford it. However, your donations gave her a new lease on life! She underwent a successful liver transplant and is now enjoying her childhood...</p>
+                            <p><span class="textColor">Read more</span></p>
+                        </div>
+                        <div>
+                            <p>Subscribe to read such inspiring stories</p>
+                            <div class="fundraiserWp">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41E_6GT8MHMtsLIGRzfeo4J7n38yxNb2KYiQoFoOVffEdHFA3QTfoveKRrXdishjwNuM&usqp=CAU" alt="">
+                                <p>Subscribe</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div class="fundraisersButtons" id="home-success-buttons">
+                <button>START A FUNDRAISER FOR FREE</button>
+                <button>TALK TO US</button>
+            </div>
+        
+
+    </div>
+
+    <!-- Featured in -->
+    <h1 id="home-featuredin-text">Featured In</h1>
+    <div id="home-featuredin">
+        
+        <a href="https://timesofindia.indiatimes.com/city/chennai/frontline-doctor-needs-lung-transplant/articleshow/79089119.cms"><img src="https://miro.medium.com/max/560/0*E5Z3wT62S3Wn855d.png" alt=""></a>
+        <a href="https://economictimes.indiatimes.com/tech/startups/ketto-looks-to-double-its-headcount-in-2021/articleshow/79940566.cms"> <img src="https://pbs.twimg.com/profile_images/1285571205966073857/rE3KyZFW_400x400.jpg" alt=""></a>
+        <a href="https://www.hindustantimes.com/art-and-culture/indian-dance-protege-begins-london-ballet-lessons-amid-lockdown/story-3CeQqgd7m0KMAi7kVUjohJ.html"> <img src="https://www.hindustantimes.com/res/images/logo.png" alt=""></a>
+        <a href="https://www.vice.com/en/article/889pxb/indian-ballet-dancer-kamal-singh-crowdfunded-his-way-to-dance-school"><img src="https://cdn.freebiesupply.com/images/large/2x/vice-logo-transparent.png" alt=""></a>
+        <a href="https://www.afaqs.com/interviews/our-view-is-that-people-donate-money-but-they-do-it-a-bit-differently-kettos-varun-sheth"><img src="https://quintype-dropbox.s3-accelerate.amazonaws.com/afaqs.quintype.com/2019-07-23/1834/afaqs_og_image.png" alt=""></a>
+        <a href="https://www.financialexpress.com/industry/sme/cafe-sme/msme-fin-crowdfunding-is-a-great-way-for-new-businesses-to-test-the-waters-before-launching-product-going-big/2110545/"><img src="https://play-lh.googleusercontent.com/IM5q7H7YxOAe7x0EAm6slWfaTHTKLXR9DwbAeiq418y_ZCjnoPsKI-brVrFHpF1k3LM" alt=""></a>
+    </div>
+
+    <div class="fundraisersSMbuttons">
+        <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
+        <div class="fundraiserFb">
+            <img src="https://www.freeiconspng.com/uploads/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" alt="">
+            <p>CHAT WITH US</p>
+        </div>
+        <div class="fundraiserWp">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41E_6GT8MHMtsLIGRzfeo4J7n38yxNb2KYiQoFoOVffEdHFA3QTfoveKRrXdishjwNuM&usqp=CAU" alt="">
+            <p>CHAT WITH US</p>
+        </div>
+    </div>
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div id="footertop">
+                <div>
+                    <div id="footerlogo">
+                        <img  src="https://kettocdn.gumlet.io/images/logo-dark-bg.svg?w=80&dpr=1.0" alt="">
+                    </div>
+                    <div id="footer-sm-icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/37/37409.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="">
+                        <img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/152/152810.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png?w=360" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/154/154858.png" alt="">
+    
+    
+                    </div>
+                    <div id="footer-followers">
+                        <h2>
+                            1.5M+
+                        </h2>
+                        <p>Followers</p>
+                    </div>
+                    <div id="footer-contact">
+                        <h4>
+                            For any queries
+                            <br>
+                            Email: info@ketto.org
+                            <br>
+                            Contact No: +91 9930088522
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <h4>Causes</h4>
+                    <a href="">Medical crowdfunding</a>
+                
+                    <a href="">Cancer Crowdfunding</a>
+                    
+                    <a href="">Education Crowdfunding</a>
+       
+                    <a href="">Creative Fundraising</a>
+    
+                    <a href="">Child Welfare</a>
+    
+                    <a href="">Animal Fundraisers</a>
+             
+                    <a href="">COVID-19 Relief Fund</a>
+                </div>
+                <div>
+                    <h4>How it works?</h4>
+                    <a href="">Fundraising for NGOs</a>
+                    <a href="">Sponsor A Child</a>
+                    <a href="">Fundraising Tips</a>
+                    <a href="">What is Crowdfunding?</a>
+                    <a href="">Corporates</a>
+                    <a href="">Withdraw Funds</a>
+                    <a href="">Browse Fundraiser</a>
+                </div>
+                <div>
+                    <h4>About Us</h4>
+                    <a href="">Team Ketto</a>
+                    <a href="">In The News</a>
+                    <a href="">Our Partners</a>
+                    <a href="">Careers</a>
+                    <a href="">Ketto Blog</a>
+                    <a href="">Success Stories</a>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <a href="">Medical Finance</a>
+                    <a href="">FAQs & Help Center</a>
+                    <a href="">Are Ketto Campaigns Genuine?</a>
+                    <a href="">Fundraiser Video</a>
+                    <a href="">Trust & Safety</a>
+                    <a href="">Plans & Pricing</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <div id="footer-banking-logo">
+                <img src="https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&dpr=1.0" alt="">
+            </div>
+            <div id="footer-copyright">
+                <p>Copyright © 2022 Ketto Online Ventures Pvt Ltd. All Rights Reserved.
+                    Terms of Use |
+                    Privacy Policy |
+                    AML Policy |
+                    Use of cookies </p>
+            </div>
+        </div>
+
+        <div class="supportButton">
+            <h4>Support</h4>
+        </div>
+
+</body>
+</html>
+
+
+<script src="script.js"></script>
+<script src="script2.js"></script>
+
+<script>
+    document.getElementById("submit").addEventListener("click",signinbtn);
+    let signinarr=JSON.parse(localStorage.getItem("signup"));
+
+    // console.log(signinarr)
+    function signinbtn(){
+        event.preventDefault();
+        let inemail=document.getElementById("signinEmail").value;
+        let inpass =document.getElementById("signinPass").value;
+        
+   
+        let ans=false;
+           for(let i=0;i<signinarr.length;i++){
+
+            if(inemail==signinarr[i].iemail && inpass==signinarr[i].ipass){
+                
+                // console.log("daniel")
+                ans=true;
+                break;
+            }
+           }
+            if(ans==true){
+                alert("Login Successful");
+                // window.location.reload();
+                document.querySelector("#showLogin").innerText=inemail;
+            }else{
+                alert("Email or password incorrect!! Try again.")
+            }
+
+
+
+    }
+
+
+
+        
+    
+
+</script>
+
+
+
